@@ -1,0 +1,51 @@
+﻿using System;
+using TechTalk.SpecFlow;
+
+namespace PRIBU.Tests.StepDefinitions
+{
+    [Binding]
+    public class RegistroEstadoEmocionalSteps
+    {
+        [Given(@"que el (.*) ingresa a la aplicación por primera vez en el día")]
+        public void GivenQueElEstudianteIngresaALaAplicacion(string estudiante)
+        {
+            // Simulación de inicio de sesión inicial del día para el estudiante de la tabla
+        }
+
+        [When(@"aparece la ventana emergente de estado de ánimo")]
+        public void WhenApareceLaVentanaEmergenteDeEstadoDeAnimo()
+        {
+            // Verificar que el pop-up esté visible
+        }
+
+        [When(@"selecciona la opción emocional (.*)")]
+        public void WhenSeleccionaLaOpcionEmocional(string emocion)
+        {
+            // Simulación de clic en la opción emocional extraída de la tabla
+        }
+
+        [Then(@"el sistema guarda la selección en su historial personal")]
+        public void ThenElSistemaGuardaLaSeleccionEnSuHistorialPersonal()
+        {
+            // Verificar guardado en la base de datos
+        }
+
+        [Given(@"que el (.*) registra niveles (.*) de ansiedad durante ""(.*)"" días consecutivos")]
+        public void GivenQueElEstudianteRegistraNivelesDeAnsiedadDuranteDias(string estudiante, string nivelAnsiedad, int dias)
+        {
+            // Configuración del historial simulado usando los parámetros de la tabla
+        }
+
+        [When(@"la IA analiza el historial emocional")]
+        public void WhenLaIAAnalizaElHistorialEmocional()
+        {
+            // Ejecución del algoritmo predictivo
+        }
+
+        [Then(@"el sistema debe generar una (.*) preventiva personalizada")]
+        public void ThenElSistemaDebeGenerarUnaRecomendacionPreventiva(string recomendacion)
+        {
+            // Verificar que la interfaz muestre la recomendación correcta según la tabla
+        }
+    }
+}

@@ -1,0 +1,45 @@
+﻿using System;
+using TechTalk.SpecFlow;
+
+namespace PRIBU.Tests.StepDefinitions
+{
+    [Binding]
+    public class InteraccionCoachSteps
+    {
+        [Given(@"que el (.*) escribe la palabra ""(.*)"" relacionada con estrés o agotamiento")]
+        public void GivenQueElEstudianteEscribeLaPalabraRelacionadaConEstresOAgotamiento(string estudiante, string palabraClave)
+        {
+            // Simulación del estudiante ingresando una palabra de la tabla
+        }
+
+        [When(@"envía el mensaje al chatbot")]
+        public void WhenEnviaElMensajeAlChatbot()
+        {
+            // Acción de enviar el mensaje
+        }
+
+        [Then(@"el sistema debe responder en menos de ""(.*)"" segundos")]
+        public void ThenElSistemaDebeResponderEnMenosDeSegundos(int segundos)
+        {
+            // Verificar tiempo de respuesta
+        }
+
+        [Given(@"que el (.*) permanece más de ""(.*)"" minutos interactuando con el coach virtual")]
+        public void GivenQueElEstudiantePermaneceMasDeMinutosInteractuando(string estudiante, int minutos)
+        {
+            // Simulación del temporizador
+        }
+
+        [When(@"finaliza la conversación")]
+        public void WhenFinalizaLaConversacion()
+        {
+            // Cierre de chat
+        }
+
+        [Then(@"el sistema debe recomendar como mínimo una técnica de (.*) personalizada")]
+        public void ThenElSistemaDebeRecomendarUnaTecnicaPersonalizada(string tipoRelajacion)
+        {
+            // Verificar recomendación basada en la tabla
+        }
+    }
+}

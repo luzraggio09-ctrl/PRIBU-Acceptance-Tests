@@ -1,0 +1,81 @@
+﻿using System;
+using TechTalk.SpecFlow;
+
+namespace PRIBU.Tests.StepDefinitions
+{
+    [Binding]
+    public class AlertaTempranaEstresSteps
+    {
+        [Given(@"que el sistema detecta ""(.*)"" registros consecutivos de estrés (.*) durante una semana en el (.*)")]
+        public void GivenQueElSistemaDetectaRegistrosDeEstresEnEstudiante(int numRegistros, string nivelEstres, string estudiante)
+        {
+            // Simulación de la detección de registros emocionales del estudiante según la tabla
+        }
+
+        [When(@"procesa la información emocional")]
+        public void WhenProcesaLaInformacionEmocional()
+        {
+            // Ejecución del motor de evaluación
+        }
+
+        [Then(@"debe generar una alerta (.*)")]
+        public void ThenDebeGenerarUnaAlerta(string tipoAlerta)
+        {
+            // Verificación de que se genere la alerta correcta (preventiva, crítica, etc.)
+        }
+
+        [Given(@"que la alerta ha sido generada para el (.*)")]
+        public void GivenQueLaAlertaHaSidoGeneradaParaElEstudiante(string estudiante)
+        {
+            // Precondición: El estudiante de la tabla tiene una alerta pendiente
+        }
+
+        [When(@"el estudiante la visualiza")]
+        public void WhenElEstudianteLaVisualiza()
+        {
+            // Simulación de clic en la notificación
+        }
+
+        [Then(@"el sistema debe mostrar recomendaciones de (.*) para reducir el estrés")]
+        public void ThenElSistemaDebeMostrarRecomendaciones(string tipoRecomendacion)
+        {
+            // Validación de la recomendación mostrada en pantalla
+        }
+
+        [Given(@"que el (.*) mantiene niveles (.*) de estrés durante ""(.*)"" semanas consecutivas")]
+        public void GivenQueElEstudianteMantieneNivelesDeEstresDuranteSemanas(string estudiante, string nivelActual, int numSemanas)
+        {
+            // Configuración del historial con mejora sostenida
+        }
+
+        [When(@"el sistema realiza una nueva evaluación")]
+        public void WhenElSistemaRealizaUnaNuevaEvaluacion()
+        {
+            // Ejecución del proceso de revisión de alertas
+        }
+
+        [Then(@"debe retirar la alerta activa")]
+        public void ThenDebeRetirarLaAlertaActiva()
+        {
+            // Verificación de que la alerta se cierra correctamente
+        }
+
+        [Given(@"que el (.*) ignora ""(.*)"" alertas consecutivas")]
+        public void GivenQueElEstudianteIgnoraAlertasConsecutivas(string estudiante, int numAlertas)
+        {
+            // Simulación de un historial de alertas no atendidas por el usuario
+        }
+
+        [When(@"se genera una nueva")]
+        public void WhenSeGeneraUnaNueva()
+        {
+            // Creación de una alerta adicional
+        }
+
+        [Then(@"la plataforma debe aumentar su prioridad visual a (.*)")]
+        public void ThenLaPlataformaDebeAumentarSuPrioridadVisual(string nivelPrioridad)
+        {
+            // Validación de que la nueva interfaz destaque la alerta (ej. color rojo, banner)
+        }
+    }
+}

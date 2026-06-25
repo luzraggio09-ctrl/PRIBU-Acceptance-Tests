@@ -1,0 +1,45 @@
+﻿using System;
+using TechTalk.SpecFlow;
+
+namespace PRIBU.Tests.StepDefinitions
+{
+    [Binding]
+    public class MonitoreoDescansoSteps
+    {
+        [Given(@"que el (.*) registra menos de ""(.*)"" horas de sueño durante ""(.*)"" días consecutivos")]
+        public void GivenQueElEstudianteRegistraMenosDeHorasDeSuenoDuranteDias(string estudiante, int horasSueno, int dias)
+        {
+            // Simulación del registro de horas de sueño para el estudiante indicado en la tabla
+        }
+
+        [When(@"el sistema analiza el patrón semanal de descanso")]
+        public void WhenElSistemaAnalizaElPatronSemanalDeDescanso()
+        {
+            // Ejecución de la lógica de análisis del historial de sueño
+        }
+
+        [Then(@"debe mostrar una (.*) de fatiga acumulada")]
+        public void ThenDebeMostrarUnaAlertaDeFatigaAcumulada(string alertaVisual)
+        {
+            // Verificar que la interfaz de usuario despliegue el tipo de alerta visual correcto
+        }
+
+        [Given(@"que el (.*) mejora su promedio de sueño semanal")]
+        public void GivenQueElEstudianteMejoraSuPromedioDeSueno(string estudiante)
+        {
+            // Configuración de los datos de prueba del estudiante mostrando una tendencia de mejora
+        }
+
+        [When(@"supera las ""(.*)"" horas promedio diarias")]
+        public void WhenSuperaLasHorasPromedioDiarias(int horasPromedio)
+        {
+            // Simulación del cálculo del promedio y validación del umbral
+        }
+
+        [Then(@"el sistema debe reflejar dicho avance con un (.*) en el panel de bienestar")]
+        public void ThenElSistemaDebeReflejarAvanceConIndicador(string indicador)
+        {
+            // Verificar que el dashboard se actualice mostrando el indicador positivo (ej. medalla, trofeo)
+        }
+    }
+}
