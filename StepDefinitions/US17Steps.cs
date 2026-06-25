@@ -1,4 +1,4 @@
-
+using System;
 using TechTalk.SpecFlow;
 
 namespace PRIBU.Tests.StepDefinitions
@@ -6,44 +6,40 @@ namespace PRIBU.Tests.StepDefinitions
     [Binding]
     public class PausasActivasSteps
     {
-        // Escenario 1: Respuesta rápida ante fatiga detectada
-
-        [Given(@"que el estudiante lleva más de dos horas continuas estudiando")]
-        public void GivenEstudianteEstudiaDosHoras()
+        [Given(@"que el estudiante (.*) lleva más de (.*) minutos estudiando sin descanso")]
+        public void GivenQueElEstudianteLlevaMasDeMinutosEstudiandoSinDescanso(string estudiante, int minutosEstudio)
         {
-            // Simular tiempo prolongado de estudio
+            // Simulación del tiempo prolongado de estudio
         }
 
-        [When(@"el sistema detecta actividad prolongada sin descanso")]
-        public void WhenSistemaDetectaActividad()
+        [When(@"el sistema detecta actividad prolongada")]
+        public void WhenElSistemaDetectaActividadProlongada()
         {
-            // Analizar tiempo de actividad del estudiante
+            // Detección de actividad continua
         }
 
-        [Then(@"la aplicación muestra una recomendación de pausa activa")]
-        public void ThenMostrarPausaActiva()
+        [Then(@"la aplicación muestra la recomendación de pausa activa en menos de (.*) segundos")]
+        public void ThenLaAplicacionMuestraLaRecomendacion(int tiempoRespuesta)
         {
-            // Mostrar sugerencia de pausa activa
+            // Verificar tiempo de respuesta
         }
 
-        // Escenario 2: Alerta preventiva de descanso
-
-        [Given(@"que la recomendación de pausa activa fue mostrada al estudiante")]
-        public void GivenRecomendacionMostrada()
+        [Given(@"que la recomendación de pausa activa fue mostrada al (.*)")]
+        public void GivenQueLaRecomendacionFueMostrada(string estudiante)
         {
-            // Simular recomendación ya mostrada
+            // Simulación de recomendación mostrada
         }
 
         [When(@"el estudiante alcanza 2 horas de estudio continuo")]
-        public void WhenAlcanzaDosHorasDeEstudio()
+        public void WhenElEstudianteAlcanzaDosHoras()
         {
-            // Verificar tiempo acumulado de estudio
+            // Verificación de tiempo acumulado
         }
 
-        [Then(@"el sistema envía la alerta preventiva de pausa activa")]
-        public void ThenEnviarAlertaPreventiva()
+        [Then(@"el sistema envía la alerta preventiva de pausa activa en menos de (.*) segundos")]
+        public void ThenElSistemaEnviaLaAlertaPreventiva(int tiempoRespuesta)
         {
-            // Enviar alerta preventiva al estudiante
+            // Validar envío de alerta preventiva
         }
     }
 }
